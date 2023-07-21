@@ -1,0 +1,114 @@
+<app-header></app-header>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-left align-items-center pt-5">
+        <h2 class="post">Recent blog posts</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h1 class="header">Here are top 5 Microfinance Banks</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 py-5">
+            <small class="blue">Posted by: Digital Team <br> • 20 Jan 2022</small>
+            <p class="head-cover">
+              Addosser Microfinance Bank Ranked Top 5 Microfinance Banks in
+              Nigeria By Business Day
+            </p>
+            <small class="des">
+              Addosser Microfinance Bank has been ranked among the top 5
+              Microfinance Banks in Nigeria by Business Day on the 7th of June,
+              2023...
+            </small>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="info-list">
+          <div class="list">
+            <img src="../../assets/img/cover-bg-1.svg" class="img-fluid" alt="" />
+            <div>
+              <small class="blue">Posted by: Digital Team • 20 Jan 2022</small>
+              <p class="head-cover truncate-overflow">
+                Addosser Microfinance Bank Ranked Top 5 Microfinance Banks in
+                Nigeria By Business Day
+              </p>
+              <small class="des">
+                Addosser Microfinance Bank has been ranked among the top 5
+                Microfinance Banks in Nigeria by Business Day on the 7th of
+                June, 2023...
+              </small>
+            </div>
+          </div>
+          <div class="list">
+            <img src="../../assets/img/cover-bg-2.svg" class="img-fluid" alt="" />
+            <div>
+              <small class="blue">Posted by: Ogechukwu Ezediunor <br> • 18 Jan 2022</small>
+              <p class="head-cover truncate-overflow">
+                Addosser MFB Hosts Customers to its 2022 Customer Forum: 
+              </p>
+              <small class="des">
+                The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="bg-cream pb-5">
+    <div class="text-center align-items-center pt-5">
+      <!-- <h2 class="news-title">News</h2> -->
+      <div class="name-divider">
+        <hr width="10%" color="#fde428" size="6px" align="center" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col" *ngFor="let item of features">
+          <div class="swiper-slide swiper-box-grid">
+            <img src="{{ item.img }}" class="img-fluid w-100" alt="" />
+            <span> {{ item.name }} </span>
+            <div class="seprate-me">
+              <img src="../../../assets/img/clock.svg" alt="" />
+              <span>{{ item.date }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- News 2 -->
+
+    <div class="text-center align-items-center pt-5">
+      <!-- <h2 class="news-title">News</h2> -->
+      <div class="name-divider">
+        <hr width="10%" color="#fde428" size="6px" align="center" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col" *ngFor="let item of features">
+          <div class="swiper-slide swiper-box-grid">
+            <img src="{{ item.img }}" class="img-fluid w-100" alt="" />
+            <span> {{ item.name }} </span>
+            <div class="seprate-me">
+              <img src="../../../assets/img/clock.svg" alt="" />
+              <span>{{ item.date }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

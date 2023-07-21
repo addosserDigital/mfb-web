@@ -1,0 +1,16 @@
+<div>
+    <swiper
+        [config]="config"
+    >
+        <ng-template swiperSlide *ngFor="let item of features">
+        <div class="swiper-slide swiper-box-grid" >
+            <img src="{{item.img}}" class="img-fluid w-100" alt="" />
+            <span> {{item.name}} </span>
+            <div class="seprate-me">
+                <img src="../../../assets/img/clock.svg" alt="">
+                <span>{{item.date}}</span>
+            </div>
+        </div>
+        </ng-template>
+    </swiper>
+</div>

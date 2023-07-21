@@ -1,0 +1,61 @@
+<app-header></app-header>
+<section>
+  <div
+    class="jubomtron"
+    style="
+      background: url('../../assets/img/loan-bg.svg') no-repeat center center;
+      height: 79vh;
+    "
+  >
+    <div class="container">
+      <div class="row ps-0 ps-md-4">
+        <div class="col-md-7 col-12">
+          <div class="cover-cove">
+            <span> Loan Products </span>
+            <img
+              src="../../assets/img/cover-upward.svg"
+              class="roller-cove"
+              alt=""
+            />
+            <small>
+              Our loan products are specially designed to take you from where
+              you are to where you want to be.
+            </small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-cream">
+  <div class="text-center align-self-center py-5 my-auto">
+    <h2 class="">
+      <strong>Loan Products</strong>
+    </h2>
+  </div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+      <div
+        class="col mb-3 pointer"
+        *ngFor="let item of loan"
+        [routerLink]="['/loan', item.id]"
+      >
+        <div class="card">
+          <img src="{{ item.img }}" class="card-img-top" alt="..." />
+          <div class="card-body loan-content">
+            <h5 class="card-title text-center">{{ item.name }}</h5>
+            <small class="card-text text-center">
+              {{ item.des }}
+            </small>
+            <p class="card-text text-center">
+              <a href="#">Read more></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

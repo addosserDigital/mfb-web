@@ -1,0 +1,99 @@
+.cover-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+
+  span {
+    color: #fff;
+    font-family: Prompt;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  small {
+    color: #fff;
+    font-family: "Prompt";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .roller-1 {
+    position: absolute;
+    left: 30px;
+    bottom: -47px;
+    width: fit-content;
+  }
+  .roller-2 {
+    position: absolute;
+    right: -38px;
+    bottom: -28px;
+    width: 20%;
+  }
+  .roller-3 {
+    position: absolute;
+    left: -30px;
+    bottom: -200px;
+    width: fit-content;
+  }
+  .roller-4 {
+    position: absolute;
+    right: 140px;
+    top: -110px;
+    width: fit-content;
+  }
+  .roller-5 {
+    position: absolute;
+    right: 300px;
+    top: -68px;
+    width: fit-content;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .cover-1 {
+    .roller-1 {
+      width: 65%;
+    }
+
+    .roller-2 {
+      right: 45%;
+      bottom: -90px;
+      width: 25%;
+    }
+    .roller-3 {
+      left: -30px;
+      bottom: -155px;
+      width: 65%;
+    }
+    .roller-4 {
+      position: absolute;
+      right: 100px;
+      top: 10px;
+      width: fit-content;
+    }
+    .roller-5 {
+      position: absolute;
+      right: 150px;
+      top: 80px;
+      width: 25%;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) { ... }

@@ -1,0 +1,87 @@
+<app-header></app-header>
+
+<section *ngIf="result">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="{{result.img}}" class="w-100" alt="">
+            </div>
+            
+            <div class="col-12 col-md-6 result-des">
+                <span class="blue">{{result.role}}</span>
+                <h5>{{result.name}}</h5>
+                <p [innerHtml]="result.details"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+  <div class="text-center align-self-center py-5 my-auto">
+    <small class="blue">Our People</small>
+    <h2 class="">
+      <strong>Meet the Board of Directors</strong>
+    </h2>
+  </div>
+  <!-- Team -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col" *ngFor="let item of boardTeam" (click)="onTeam(item.name)">
+        <div class="card mb-5">
+          <img
+            src="{{item.img}}"
+            class="card-img-top"
+            height="296"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="user-content">
+              <h5>{{item.name}}</h5>
+              <span class="blue">{{item.role}}</span>
+              <span class="gray truncate-overflow" [innerHtml]="item.details">
+              </span>
+              <span>View profile></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="text-center align-self-center py-5 my-auto">
+    <!-- <small class="blue">Our People</small> -->
+    <h2 class="">
+      <strong>Meet the Management Team</strong>
+    </h2>
+  </div>
+  <!-- Team -->
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col" *ngFor="let item of managementTeam" (click)="onTeamManagement(item.name)">
+        <div class="card mb-5">
+          <img
+            src="{{item.img}}"
+            class="card-img-top"
+            height="296"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="user-content">
+              <h5>{{item.name}}</h5>
+              <span class="blue">{{item.role}}</span>
+              <span
+                class="gray truncate-overflow"
+                [innerHtml]="item.details"
+              ></span>
+              <span>View profile></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

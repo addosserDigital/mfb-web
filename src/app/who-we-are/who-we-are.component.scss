@@ -1,0 +1,162 @@
+.addosser-bg {
+  position: relative;
+
+  .mfb {
+    position: relative;
+    z-index: 2;
+  }
+
+  .dot-pattern {
+    position: absolute;
+    top: -82px;
+    right: 0px;
+    z-index: 1;
+  }
+}
+
+.about-us {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.all-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  .list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: start;
+    .sub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: start;
+
+      h4 {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+}
+.card-shadow {
+  box-shadow: 0px 10px 10px -5px #0000000a;
+
+  box-shadow: 0px 20px 25px -5px #0000001a;
+}
+.card-relative {
+  position: relative;
+  padding: 55px 20px 50px 20px;
+  height: 25vh;
+
+  .blue-box {
+    position: absolute;
+    top: -30px;
+    left: inherit;
+    background: #0800a5;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+
+.card-footer {
+  border-top: transparent !important;
+  background: #f9fafb !important;
+  padding: 24px;
+  color: #0800a5;
+}
+
+.bg-cream {
+  background: #fffce9;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    color: #000;
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+}
+
+.cover-cove {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  padding-top: 35%;
+  gap: 60px;
+
+  span {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  small {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .roller-cove {
+    position: absolute;
+    top: 80%;
+    left: 0px;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+
+  .cover-cove {
+    padding-top: 45%;
+
+    .roller-cove {
+      top: 245px;
+    }
+  }
+}

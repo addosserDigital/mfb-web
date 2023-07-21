@@ -1,0 +1,91 @@
+<div>
+  <swiper [config]="config">
+    <ng-template swiperSlide *ngFor="let item of features; let i = index">
+      <div
+        class="swiper-slide swiper-box ps-5"
+        style="background: url({{item.img}}) no-repeat center center fixed;"
+      >
+        <!-- <img src="{{item.name}}" width="496.57px" height="455px" alt="" /> -->
+        <div *ngIf="i === 0">
+          <div class="container">
+            <div class="row ps-0 ps-md-4">
+              <div class="col-md-9 col-12 cover-1">
+                <span> {{ item.name }} </span>
+                <small>{{ item.description }}</small>
+                <img
+                  src="../../../assets/img/mfb-cover-1.svg"
+                  class="roller-1"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div *ngIf="i === 1">
+          <div class="container">
+            <div class="row ps-0 ps-md-4">
+              <div class="col-md-7 col-12 cover-1">
+                <span> {{ item.name }} </span>
+                <small>{{ item.description }}</small>
+                <img
+                  src="../../../assets/img/mfb-cover-2.svg"
+                  class="roller-2"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div *ngIf="i === 2">
+          <div class="container">
+            <div class="row ps-0 ps-md-4">
+              <div class="col-md-9 col-12 cover-1">
+                <span> {{ item.name }} </span>
+                <small>{{ item.description }}</small>
+                <img
+                  src="../../../assets/img/mfb-cover-3.svg"
+                  class="roller-3"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div *ngIf="i === 3">
+          <div class="container">
+            <div class="row ps-0 ps-md-4">
+              <div class="col-md-9 col-12 cover-1">
+                <span> {{ item.name }} </span>
+                <small>{{ item.description }}</small>
+                <img
+                  src="../../../assets/img/mfb-cover-4.svg"
+                  class="roller-4"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div *ngIf="i === 4">
+          <div class="container">
+            <div class="row ps-0 ps-md-4">
+              <div class="col-md-9 col-12 cover-1">
+                <span> {{ item.name }} </span>
+                <small>{{ item.description }}</small>
+                <img
+                  src="../../../assets/img/mfb-cover-5.svg"
+                  class="roller-5"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</div>

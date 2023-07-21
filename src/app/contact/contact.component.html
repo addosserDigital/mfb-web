@@ -1,0 +1,194 @@
+<app-header></app-header>
+<section>
+  <div
+    class="jubomtron"
+    style="
+      background: url('../../assets/img/contact-bg.svg') no-repeat center center;
+      height: 89vh;
+    "
+  >
+    <div class="container">
+      <div class="row ps-0 ps-md-4">
+        <div class="col-md-6 col-12 d-none d-md-block">
+          <div class="cover-cove">
+            <span> Contact us </span>
+            <img
+              src="../../assets/img/cover-upward.svg"
+              class="roller-cove"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-6 col-12 p-5">
+          <div class="contact-form mt-2">
+            <div class="message">
+              <h3><strong>Send us a message</strong></h3>
+              <small>Kindly fill in the information below to sent to us</small>
+            </div>
+            <!-- form -->
+            <form action="">
+              <div class="row">
+                <div class="mb-3">
+                  <label for="Name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Name"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Email address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3">
+                  <label for="PhoneNumber" class="form-label"
+                    >Phone number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="PhoneNumber"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3">
+                  <label for="category" class="form-label"
+                    >Request category</label
+                  >
+                  <select
+                    class="form-select"
+                    id="category"
+                    aria-label="Default select example"
+                  >
+                    <option selected>select category</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3">
+                  <label for="Message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="Message"
+                    rows="3"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="btn-right">
+                    <button type="button" class="btn btn-md btn-blue">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="branches">
+  <div class="container">
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-col">
+      <div class="col col-branches" *ngFor="let item of branches">
+        <input
+          type="radio"
+          class="btn-check"
+          name="options"
+          id="{{ item.id }}"
+          autocomplete="off"
+          [checked]="item.checked"
+        />
+        <label class="btn-gray-blue" for="{{ item.id }}">{{ item.name }}</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div
+        class="col text-center mt-5 mb-3"
+        style="
+          background: url('../../assets/img/contact-bg.svg') no-repeat center
+            center;
+          height: fit-content;
+        "
+      >
+        <div class="row mb-5">
+          <div class="col-12 col-md-6">
+            <div class="google-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.6102709575794!2d3.4154019745870143!3d6.444060593547227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b41d952d08f%3A0x4491998ed3607327!2sAddosser%20Finance%20Ltd.!5e0!3m2!1sen!2sng!4v1688622385124!5m2!1sen!2sng"
+                width="600"
+                height="450"
+                style="border: 0; border-radius: 25px"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 info">
+            <div class="list">
+              <div class="blue-holder">
+                <img src="../../assets/img/call_black.svg" alt="" />
+              </div>
+              <div class="list-des">
+                <h2>Phone Number</h2>
+                <p>+234-9087013749, +234-8140437926</p>
+              </div>
+            </div>
+            <div class="list">
+              <div class="blue-holder">
+                <img src="../../assets/img/call_black.svg" alt="" />
+              </div>
+              <div class="list-des-small">
+                <h2>Address</h2>
+                <p>32 Lewis Street, Lagos Island, Lagos.</p>
+              </div>
+            </div>
+            <div class="list">
+              <div class="blue-holder">
+                <img src="../../assets/img/call_black.svg" alt="" />
+              </div>
+              <div class="list-des">
+                <h2>Email</h2>
+                <p>customercare@addosser.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8"></div>
+      <div class="col-12 col-md-4"></div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

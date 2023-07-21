@@ -1,0 +1,138 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "swiper/css";
+@import "swiper/css/keyboard";
+@import "swiper/css/pagination";
+@import "swiper/css/navigation";
+
+@import "lightgallery/scss/lightgallery";
+
+* {
+  font-family: "Prompt", "Times New Roman", Times, serif !important;
+}
+// body {
+//   margin: 0;
+// }
+// .gallery-item {
+//   margin: 5px;
+// }
+
+.card {
+  border: none !important;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.03) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 10px;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 3.93766px 13.4815px rgba(0, 0, 0, 0.1);
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
+}
+
+:root {
+  --swiper-navigation-size: 25px !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #808285 !important;
+  //   border-radius: 4px;
+  //   width: 40px;
+}
+
+.grid-slider .swiper-pagination-bullet {
+  background: #e5e5e5 !important;
+  opacity: 1;
+}
+
+.grid-slider .swiper-pagination-bullet-active {
+  background-color: #377dff !important;
+  //   border-radius: 4px;
+  //   width: 40px;
+}
+
+.swiper-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  //   -webkit-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -o-background-size: cover;
+  //   background-size: auto;
+  height: 80vh;
+  //   width: 100%;
+
+  & span {
+    max-width: 45vw;
+    font-family: Archivo;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+}
+
+.swiper-box-grid {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+
+  & span {
+    // max-width: 45vw;
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222222;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px;
+}
+
+.grid-slider {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 0px;
+  }
+}
+.gallery-item-img {
+  width: auto !important;
+  gap: 20px;
+}
+
+.truncate-overflow {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  // background-color: #a6a9ab
+}
+
+// .jubomtron {
+//     height: 80vh;
+// } // Medium devices (tablets, 768px and up)
+  @media (max-width: 768px) {
+    .gallery-item-img {
+      width: 100% !important;
+      gap: 0px;
+    }
+  }

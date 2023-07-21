@@ -1,0 +1,57 @@
+<app-header></app-header>
+<section *ngIf="result">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="{{ result.img }}" class="w-100" alt="" />
+      </div>
+
+      <div class="col-12 col-md-6 result-des">
+        <h5>{{ result.name }}</h5>
+        <p [innerHtml]="result.des"></p>
+        <div>
+          <span>
+            <strong> Benefits </strong>
+          </span>
+          <ul>
+            <li *ngFor="let item of result.benefits">
+              {{ item.name }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-cream">
+  <div class="text-center align-self-center py-5 my-auto">
+    <h2 class="">
+      <strong>Loan Products</strong>
+    </h2>
+  </div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2">
+      <div
+        class="col mb-3 pointer"
+        *ngFor="let item of loan"
+        [routerLink]="['/loan', item.id]"
+      >
+        <div class="card">
+          <img src="{{ item.img }}" class="card-img-top" alt="..." />
+          <div class="card-body loan-content">
+            <h5 class="card-title text-center">{{ item.name }}</h5>
+            <small class="card-text text-center">
+              {{ item.des }}
+            </small>
+            <p class="card-text text-center">
+              <a href="#">Read more></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

@@ -1,0 +1,189 @@
+<app-header></app-header>
+<section style="position: relative">
+  <app-full-slider [product]="features"> </app-full-slider>
+</section>
+
+<section>
+  <div class="bg-cream">
+    <h2>What we do</h2>
+
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col">
+          <div class="card mb-3">
+            <img
+              src="../../assets/img/w-loan.svg"
+              class="card-img-top"
+              alt="loan"
+            />
+            <div class="card-body">
+              <h5 class="card-title"><strong>Loans</strong></h5>
+              <p class="card-text">
+                Our loan options are specifically made to provide vital support
+                for the economically active individuals, as well as micro and
+                small medium enterprises, seeking to grow and expand their
+                businesses. With accessible terms and favorable interest rates,
+                we aim to make the loan process seamless.
+              </p>
+              <a href="#" class="text-dark">Read more></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3">
+            <img
+              src="../../assets/img/w-savings.svg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>Savings and Deposits</strong>
+              </h5>
+              <p class="card-text" style="margin-bottom: 65px">
+                We make reaching your financial goals easy with our diverse
+                range of savings accounts for individuals and businesses. Open
+                any of our savings accounts that suit your financial needs.
+              </p>
+              <a href="#" class="text-dark">Read more></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3">
+            <img
+              src="../../assets/img/w-agency.svg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>Agency Banking</strong>
+              </h5>
+              <p class="card-text" style="margin-bottom: 65px">
+                We offer easily accessible and affordable customized offerings
+                including Microhealth and Solar products designed to help
+                customers improve their standard of living.
+              </p>
+              <a href="#" class="text-dark">Read more></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  style="
+    background: url('../../assets/img/perfomance.svg') no-repeat center center;
+    height: 79vh;
+  "
+>
+  <div class="col text-left align-self-center py-5 px-5 my-auto">
+    <h2 class="bg-gold pb-3 pl-2">
+      <b>Performance Highlights</b>
+    </h2>
+    <div class="pb-3 pl-2">
+      <div class="rower">
+        <div class="loc">
+          <h4>137,000+</h4>
+          <small>Customer Base</small>
+        </div>
+        <div class="loc">
+          <h4>65B+</h4>
+          <small>Customer Base</small>
+        </div>
+        <div class="loc">
+          <h4>2.6B</h4>
+          <small>Shareholders Funds</small>
+        </div>
+        <div class="loc">
+          <h4>16.5B+</h4>
+          <small>Asset Size</small>
+        </div>
+        <div class="loc">
+          <h4>55,000+</h4>
+          <small>MSMEs Supported</small>
+        </div>
+        <div class="loc">
+          <h4>9B+</h4>
+          <small>Deposit</small>
+        </div>
+        <div class="loc">
+          <h4>45B+</h4>
+          <small>Loans disbursed to women</small>
+        </div>
+        <div class="loc">
+          <h4>21</h4>
+          <small>Branch network</small>
+        </div>
+        <div class="loc">
+          <h4>3500+</h4>
+          <small>Female entrepreneurs trained</small>
+        </div>
+        <div class="loc">
+          <h4>100,000+</h4>
+          <small>Direct/indirect jobs created</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="text-center align-self-center py-5 my-auto">
+    <h2>Testimonials</h2>
+  </div>
+  <div class="d-flex justify-content-center align-items-center py-5 my-auto">
+    <lightgallery [settings]="settings" [onInit]="onInit">
+      <a
+        *ngFor="let item of items"
+        [attr.data-lg-size]="item.size"
+        className="gallery-item"
+        [attr.href]="item.src"
+      >
+        <img class="gallery-item-img" src="{{ item.thumb }}" />
+      </a>
+    </lightgallery>
+  </div>
+</section>
+
+<section class="bg-gray">
+  <div class="text-center align-self-center pt-5 my-auto">
+    <h2 class="partner-title;">Our Partners</h2>
+  </div>
+  <div class="d-flex justify-content-center align-items-center py-5 my-auto">
+    <!-- Partner logos -->
+    <div class="partners-list">
+      <img src="../../assets/img/partner-1.png" alt="" />
+      <img src="../../assets/img/partner-2.png" alt="" />
+      <img src="../../assets/img/partner-3.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="bg-cream pb-5">
+    <div class="text-center align-items-center pt-5">
+      <h2 class="news-title">News</h2>
+      <div class="name-divider">
+        <hr width="10%" color="#fde428" size="6px" align="center" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <app-grid-slider
+            [product]="gridSlide"
+            [perview]="4"
+          ></app-grid-slider>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+    <app-footer></app-footer>
+</section>

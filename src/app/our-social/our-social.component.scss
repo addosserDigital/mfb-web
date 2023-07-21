@@ -1,0 +1,174 @@
+.cover-cove {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  justify-content: center;
+  padding-top: 35%;
+  gap: 60px;
+
+  span {
+    color: #fff;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  small {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .roller-cove {
+    position: absolute;
+    top: 80%;
+    left: 0px;
+  }
+}
+
+.bg-cream {
+  background: #fffce9;
+  padding: 20px 0px;
+}
+
+.btn-gold {
+  background: #fde428;
+  color: #292d32;
+}
+
+.impact {
+  h2 {
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+}
+
+.subsid-content {
+  h4 {
+    font-family: "Raleway";
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #0800a5;
+  }
+  p {
+    font-family: "Archivo";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #6f6d71;
+  }
+}
+
+.subsid-img-content {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  padding: 50px;
+
+  .hoving-hover {
+    position: absolute;
+    left: 0px;
+    bottom: 16px;
+    z-index: 1;
+    background-color: #00000040;
+    display: block;
+    height: 97% !important;
+    width: 100%;
+    //    content: '';
+    cursor: none;
+    transition: height 1s;
+
+    &:hover {
+      transition: height 1s;
+      height: 15% !important;
+    }
+  }
+}
+
+.order-1,
+.order-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.e-title {
+  font-family: "Archivo";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #0800a5;
+}
+
+.four-e-struture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  h4 {
+    font-family: "Archivo";
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  p {
+    font-family: "Archivo";
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    color: #6f6d71;
+  }
+}
+
+.four-e-hight {
+  height: 350px;
+}
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .subsid-img-content {
+    padding: 0px;
+  }
+  .cover-cove {
+    padding-top: 45%;
+
+    .roller-cove {
+      top: 245px;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) { ... }

@@ -1,0 +1,144 @@
+.bg-cream {
+  background: #fffce9;
+
+  h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    color: #000;
+    padding-top: 110px;
+    padding-bottom: 50px;
+  }
+}
+.card-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+
+// .bg-blue-gradient {
+//     // background: linear-gradient(90deg, #08068a 37.22%, rgba(28, 51, 78, 0) 90.17%);
+//     height: 100vh
+
+// }
+.bg-gold {
+  color: #fde428;
+}
+
+.rower {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  column-gap: 16px;
+  row-gap: 40px;
+  h4,
+  small,
+  .loc {
+    width: fit-content;
+    color: #fff;
+  }
+  h4 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 0em;
+    // text-align: center;
+  }
+  small {
+    margin-top: 9px !important;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    // text-align: center;
+  }
+}
+
+.bg-gray {
+  background: #f5f5f5;
+  padding: 50px 0px;
+}
+
+.partner-title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 59px;
+  letter-spacing: -1.8240000009536743px;
+  text-align: center;
+}
+
+.partners-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+h2.news-title {
+  padding-top: 110px;
+  padding-bottom: 0px !important;
+}
+.name-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+hr {
+  margin-top: 0em;
+  border: 1px solid transparent;
+  padding: 0em;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .rower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    column-gap: 16px;
+    row-gap: 40px;
+    h4,
+    small,
+    .loc {
+      width: fit-content;
+      color: #fff;
+    }
+    h4 {
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 40px;
+      letter-spacing: 0em;
+      //   text-align: center;
+    }
+    small {
+      margin-top: 9px !important;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0em;
+      //   text-align: center;
+    }
+  }
+  .partners-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) { ... }
