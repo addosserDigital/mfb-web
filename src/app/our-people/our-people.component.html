@@ -25,9 +25,9 @@
   </div>
   <!-- Team -->
   <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
       <div class="col" *ngFor="let item of boardTeam" (click)="onTeam(item.name)">
-        <div class="card mb-5">
+        <div class="card cardbox mb-5">
           <img
             src="{{item.img}}"
             class="card-img-top"
@@ -58,9 +58,9 @@
   </div>
   <!-- Team -->
   <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
       <div class="col" *ngFor="let item of managementTeam" (click)="onTeamManagement(item.name)">
-        <div class="card mb-5">
+        <div class="card cardbox mb-5">
           <img
             src="{{item.img}}"
             class="card-img-top"

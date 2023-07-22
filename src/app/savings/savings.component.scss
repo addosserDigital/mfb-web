@@ -42,19 +42,22 @@
   
   .loan-content {
     h5 {
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 700;
       line-height: 29px;
       letter-spacing: -0.015em;
       text-align: center;
+      font-family: 'Montserrat', sans-serif;
     }
   
     small {
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 500;
       line-height: 24px;
       letter-spacing: -0.015em;
       text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      color:rgba(0, 0, 0, 0.80);
     }
     p {
       font-size: 15px;
@@ -62,6 +65,7 @@
       line-height: 24px;
       letter-spacing: -0.015em;
       text-align: center;
+      font-family: 'Montserrat', sans-serif;
   
       a {
         color: #000;

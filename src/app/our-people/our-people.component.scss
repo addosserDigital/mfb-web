@@ -48,3 +48,14 @@
 .card {
   cursor: pointer;
 }
+
+.cardbox {
+  height:70vh;
+}
+
+@media (max-width: 768px) {
+    
+  .cardbox {
+    height:inherit;
+  }
+}
