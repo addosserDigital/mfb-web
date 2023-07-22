@@ -33,7 +33,7 @@ footer {
     letter-spacing: 0em;
     text-align: left;
     color: #000000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   ul {
@@ -46,8 +46,8 @@ footer {
       text-align: justify;
       font-size: 20px;
       font-weight: 400;
-      font-family:'Montserrat', sans-serif;
-      color: rgba(0, 0, 0, 0.80);
+      font-family: "Montserrat", sans-serif;
+      color: rgba(0, 0, 0, 0.8);
       text-decoration: none;
     }
 
@@ -111,5 +111,10 @@ footer {
         color: #fff;
       }
     }
+  }
+
+  .audit {
+    margin-bottom: 4rem;
+    padding-top: 5rem;
   }
 }
